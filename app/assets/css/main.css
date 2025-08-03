@@ -1,0 +1,57 @@
+:root {
+    --primary: #111F42;
+    --gray: #272e35;
+    --gray-light: #555f6d;
+    --dark: #111928;
+    --light: #f9fafb;
+    --muted: #D7DADE;
+    --white: #FFFFFF;
+    --disabled-opacity: 0.6;
+    --font-size: 16px;
+
+    --small-button-size: 27px;
+    --default-button-size: 35px;
+    --large-button-size: 42px;
+    --extra-large-button-size: 50px;
+}
+
+.shared-btn {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0 18px 1px;
+    height: var(--default-button-size);
+    border-radius: calc(var(--default-button-size) / 2);
+    background-color: var(--muted);
+
+    /* Sizes */
+    &[data-size="small"] {
+        font-size: 12px;
+        padding: 0 16px 1px;
+        height: var(--small-button-size);
+        border-radius: calc(var(--small-button-size) / 2);
+    }
+    &[data-size="large"] {
+        font-size: 16px;
+        padding: 0 22px 2px;
+        height: var(--large-button-size);
+        border-radius: calc(var(--large-button-size) / 2);
+    }
+    &[data-size="extra-large"] {
+        font-size: 16px;
+        padding: 12px 26px 14px;
+        height: var(--extra-large-button-size);
+        border-radius: calc(var(--extra-large-button-size) / 2);
+    }
+    /* Themes */
+    &[data-type="primary"] {
+        background: var(--primary);
+        color: var(--white);
+    }
+    /* Disabled */
+    &[disabled] {
+        background-color: var(--muted);
+        opacity: var(--disabled-opacity);
+        cursor: not-allowed;
+    }
+}
