@@ -19,10 +19,17 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/google-fonts'],
   css: ['~/assets/css/main.css'],
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css'
+  },
+
+  googleFonts: {
+    families: {
+      Roboto: true,
+      Oswald: true,
+    }
   }
 })

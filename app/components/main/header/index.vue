@@ -2,12 +2,17 @@
 </script>
 
 <template>
-  <header class="border">
-    <div class="border-b">
-      <div class="container border py-5 flex items-center justify-between">
-        <SharedLogo />
+  <header class="pt-[77px]">
+    <div class="border-b fixed w-full top-0 left-0 bg-white">
+      <div class="container py-5 flex items-center justify-between">
+        <div
+          class="md:hidden text-2xl cursor-pointer p-1"
+        >
+          <LazyIconMenu class="sm:hidden"/>
+        </div>
+        <SharedLogo class="hidden md:flex"/>
 
-        <MainHeaderNavbar />
+        <MainHeaderNavbar class="hidden sm:block"/>
 
         <div>
           <SharedLangToggle />

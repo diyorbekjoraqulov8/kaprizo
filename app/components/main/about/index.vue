@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class="bg-[var(--gray)]">
+  <section id="about" class="bg-[var(--gray)]">
     <div class="container py-36 flex gap-20">
       <h2 class="w-2/5 text-5xl font-bold inline-block whitespace-nowrap bg-gradient-to-r from-[#F5F5F5] to-[#9CA3AF] bg-clip-text text-left text-transparent">“Taqsit” bu...</h2>
 

@@ -55,3 +55,7 @@
         cursor: not-allowed;
     }
 }
+
+* {
+    font-family: Oswald, sans-serif;
+}
