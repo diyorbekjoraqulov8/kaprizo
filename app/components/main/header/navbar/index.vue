@@ -1,22 +1,48 @@
 <script setup lang="ts">
-
-const scrollToSmooth = (name) => {
-  document.getElementById(name).scrollIntoView({ behavior: 'smooth' });
+interface IProps {
+  isMobile: boolean;
 }
 
+type TPageIds = 'income' | 'about' | 'advantages' | 'faq'
+
+const props = defineProps<IProps>()
+
+const emits = defineEmits(['select'])
+
+const scrollToSmooth = (name: TPageIds): void => {
+  const element = document.getElementById(name)
+  let scrollTop;
+  if (typeof element?.scrollHeight === 'number') {
+    scrollTop = element?.offsetTop - 77
+  }
+  if (typeof scrollTop === 'number') {
+    window.scrollTo({ top: scrollTop, left: 0, behavior: 'smooth' })
+  }
+}
+
+function clickPage(name: TPageIds) {
+  scrollToSmooth(name)
+
+  props.isMobile && emits('select', name)
+}
 </script>
 
 <template>
   <nav>
-    <ul class="flex items-center justify-center gap-5 font-medium text-gray-600">
-      <li @click="() => scrollToSmooth('income')" class="cursor-pointer">Asosiy</li>
-      <li @click="() => scrollToSmooth('about')" class="cursor-pointer">Tizim haqida</li>
-      <li @click="() => scrollToSmooth('advantages')" class="cursor-pointer">Afzalliklar</li>
-      <li @click="() => scrollToSmooth('faq')" class="cursor-pointer">Savol-javoblar</li>
+    <ul
+        class="flex items-center justify-center font-medium text-gray-600"
+        :class="[isMobile ? '!flex-col !items-start pl-2' : 'gap-7']"
+    >
+      <li @click="() => clickPage('income')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Asosiy</li>
+      <li @click="() => clickPage('about')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Tizim haqida</li>
+      <li @click="() => clickPage('advantages')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Afzalliklar</li>
+      <li @click="() => clickPage('faq')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Savol-javoblar</li>
     </ul>
   </nav>
 </template>
 
 <style scoped>
-
+.nav-item {
+  @apply cursor-pointer rounded text-gray-light hover:text-black;
+}
 </style>

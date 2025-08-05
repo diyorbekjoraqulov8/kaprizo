@@ -3,11 +3,11 @@
 </script>
 
 <template>
-  <section id="advantages" class="py-32">
+  <section id="advantages" class="py-16 lg:py-32">
     <div class="container">
       <p class="text-center mb-2 text-gray-700">Nima uchun "Taqsit" bilan ishlash qulay?</p>
 
-      <h3 class="text-4xl text-center text-dark font-bold mb-12">"Taqsit"ning afzalliklari</h3>
+      <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">"Taqsit"ning afzalliklari</h3>
 
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="advantages-card">
@@ -83,7 +83,7 @@
 
 <style scoped>
 .advantages-card {
-  @apply flex gap-4 lg:gap-8 items-center py-10 px-0;
+  @apply flex flex-col sm:flex-row gap-4 lg:gap-8 items-center py-10 px-0;
 
   img {
     @apply flex-shrink-0;

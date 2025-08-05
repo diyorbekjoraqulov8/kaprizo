@@ -1,5 +1,5 @@
 <template>
-  <li class="accordion__item">
+  <li class="accordion__item transition-all">
     <div
         class="accordion__trigger"
         :class="{ accordion__trigger_active: visible }"
@@ -9,20 +9,9 @@
       <slot name="accordion-trigger"></slot>
     </div>
 
-    <transition
-        name="accordion"
-        @enter="start"
-        @after-enter="end"
-        @before-leave="start"
-        @after-leave="end"
-    >
-      <div class="accordion__content" v-show="visible">
-        <ul>
-          <!-- This slot will handle all the content that is passed to the accordion -->
-          <slot name="accordion-content"></slot>
-        </ul>
-      </div>
-    </transition>
+    <div class="transition-all accordion__content h-0 border border-red-600 overflow-hidden box-border" :class="[visible && 'h-max']">
+      <slot name="accordion-content"></slot>
+    </div>
   </li>
 </template>
 
@@ -37,7 +26,7 @@ export default {
   },
   computed: {
     visible() {
-      return this.index == this.Accordion.active;
+      return this.index === this.Accordion.active;
     },
   },
   methods: {
@@ -47,12 +36,6 @@ export default {
       } else {
         this.Accordion.active = this.index;
       }
-    },
-    start(el) {
-      el.style.height = el.scrollHeight + "px";
-    },
-    end(el) {
-      el.style.height = "";
     },
   },
   created() {
@@ -77,14 +60,11 @@ export default {
 
 .accordion-enter-active,
 .accordion-leave-active {
-  will-change: height, opacity;
-  transition: height 0.3s ease, opacity 0.3s ease;
-  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  height: 40px;
 }
-
-.accordion-enter,
+.accordion-enter-from,
 .accordion-leave-to {
-  height: 0 !important;
-  opacity: 0;
+  height: 0;
 }
 </style>

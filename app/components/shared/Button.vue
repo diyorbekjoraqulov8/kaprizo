@@ -4,7 +4,8 @@ type ISharedButtonType = 'primary' | 'danger' | 'success' | 'warning' | 'default
 
 interface IProps {
   size?: ISharedButtonSize
-  type?: ISharedButtonType
+  type?: ISharedButtonType,
+  outline?: boolean
 }
 
 const props = defineProps<IProps>();
@@ -15,6 +16,7 @@ const props = defineProps<IProps>();
     class="shared-btn"
     :data-size="props.size"
     :data-type="props.type"
+    :data-outline="outline"
   >
     <slot />
   </button>

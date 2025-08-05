@@ -1,57 +1,53 @@
 <script setup lang="ts">
+import { Collapse } from 'vue-collapsed'
 
-const faqAccordions = [
+const isExpanded = ref(null)
+
+const list = computed(() => [
   {
-    title: 'salom',
-    text: 'salom111111111',
-  }
-]
+    id: 1,
+    title: 'Home',
+    text: 'description',
+    open: isExpanded.value === 1
+  },
+  {
+    id: 2,
+    title: 'Home 2',
+    text: 'description 2',
+    open: isExpanded.value === 2
+  },
+  {
+    id: 3,
+    title: 'Home 3',
+    text: 'description 3',
+    open: isExpanded.value === 3
+  },
+  {
+    id: 4,
+    title: 'Home 4',
+    text: 'description 4',
+    open: isExpanded.value === 4
+  },
+])
 </script>
 
 <template>
-  <section id="faq" class="py-32 bg-light">
+  <section id="faq" class="py-16 lg:py-32 bg-light">
     <div class="container">
       <p class="text-center mb-2 text-gray-700">Ko’p beriladigan savollar</p>
 
-      <h3 class="text-4xl text-center text-dark font-bold mb-12">Savol-javoblar</h3>
+      <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">Savol-javoblar</h3>
 
-      <div>
-<!--        <SharedAccordion :accordion-list="faqAccordions" class-name="gap-4 shadow border px-4 py-2">-->
-<!--          <template #content="{data}">-->
-<!--            <div class="border p-4 ">-->
-<!--              {{ data?.text }}-->
-<!--            </div>-->
-<!--          </template>-->
-<!--        </SharedAccordion>-->
-        <SharedAccordion>
-          <SharedAccordionCard>
-            <template #accordion-trigger>
-              <h3>Item 1</h3>
-            </template>
-            <template #accordion-content>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </template>
-          </SharedAccordionCard>
-
-          <SharedAccordionCard>
-            <template #accordion-trigger>
-              <h3>Item 2</h3>
-            </template>
-            <template #accordion-content>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </template>
-          </SharedAccordionCard>
-
-          <SharedAccordionCard>
-            <template #accordion-trigger>
-              <h3>Item 3</h3>
-            </template>
-            <template #accordion-content>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </template>
-          </SharedAccordionCard>
-        </SharedAccordion>
-      </div>
+      <ul>
+        <li
+          v-for="item in list"
+        >
+          <h2 @click="() => isExpanded = item.id">Salom</h2>
+          <collapse :when="item.open">
+            <p>{{ 'Collapsed '.repeat(100) }}</p>
+          </collapse>
+        </li>
+      </ul>
     </div>
   </section>
 </template>

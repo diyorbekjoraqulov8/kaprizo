@@ -54,6 +54,11 @@
         opacity: var(--disabled-opacity);
         cursor: not-allowed;
     }
+    /* Outline */
+    &[data-outline="true"] {
+        border: 1px solid var(--gray-light);
+        background-color: transparent;
+    }
 }
 
 * {

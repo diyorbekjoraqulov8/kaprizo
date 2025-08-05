@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="py-28 bg-gray px-6 lg:px-0">
+  <footer class="py-14 lg:py-28 bg-gray px-6 lg:px-0">
     <div class="container flex flex-col lg:flex-row gap-12">
       <div class="lg:w-3/5 flex flex-col gap-8">
         <SharedLogo theme="light"/>
