@@ -15,6 +15,13 @@
     --extra-large-button-size: 50px;
 }
 
+button {
+    transition: transform 0.3s;
+    &:active {
+        transform: scale(0.92);
+    }
+}
+
 .shared-btn {
     border: none;
     outline: none;

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import {scrollToSmooth} from "~/composables";
+
 interface IProps {
   isMobile: boolean;
 }
@@ -8,17 +10,6 @@ type TPageIds = 'income' | 'about' | 'advantages' | 'faq'
 const props = defineProps<IProps>()
 
 const emits = defineEmits(['select'])
-
-const scrollToSmooth = (name: TPageIds): void => {
-  const element = document.getElementById(name)
-  let scrollTop;
-  if (typeof element?.scrollHeight === 'number') {
-    scrollTop = element?.offsetTop - 77
-  }
-  if (typeof scrollTop === 'number') {
-    window.scrollTo({ top: scrollTop, left: 0, behavior: 'smooth' })
-  }
-}
 
 function clickPage(name: TPageIds) {
   scrollToSmooth(name)
