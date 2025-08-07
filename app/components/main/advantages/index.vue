@@ -1,79 +1,103 @@
 <script setup lang="ts">
+import {useI18n} from "vue-i18n";
 
+const { t } = useI18n()
 </script>
 
 <template>
   <section id="advantages" class="py-16 lg:py-32">
     <div class="container">
-      <p class="text-center mb-2 text-gray-700">Nima uchun "Taqsit" bilan ishlash qulay?</p>
+      <h2 class="text-center mb-2 text-gray-700">Nima uchun "Kaprizo" bilan ishlash qulay?</h2>
 
-      <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">"Taqsit"ning afzalliklari</h3>
+      <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">"Kaprizo"ning afzalliklari</h3>
 
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="advantages-card">
           <NuxtImg
-            src="https://www.taqsit.uz/_next/image?url=%2Fimages%2Ffeatures%2Fcustomer.png&w=128&q=75"
+            src="advantage.png"
             :width="120"
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">Mijozga yo'naltirilgan yondashuv</h6>
-            <p class="text-lg text-gray-light">"Taqsit"da biz har bir biznes noyob ekanligini tushunamiz va biznes ehtiyojlaringizni qadrlaymiz.</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.fast_and_easy.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.fast_and_easy.text') }}</p>
           </div>
         </div>
         <div class="advantages-card">
           <NuxtImg
-            src="https://www.taqsit.uz/_next/image?url=%2Fimages%2Ffeatures%2Fcustomer.png&w=128&q=75"
+            src="advantage.png"
             :width="120"
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">Mijozga yo'naltirilgan yondashuv</h6>
-            <p class="text-lg text-gray-light">"Taqsit"da biz har bir biznes noyob ekanligini tushunamiz va biznes ehtiyojlaringizni qadrlaymiz.</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.wide_selection.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.wide_selection.text') }}</p>
           </div>
         </div>
         <div class="advantages-card">
           <NuxtImg
-            src="https://www.taqsit.uz/_next/image?url=%2Fimages%2Ffeatures%2Fcustomer.png&w=128&q=75"
+            src="advantage.png"
             :width="120"
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">Mijozga yo'naltirilgan yondashuv</h6>
-            <p class="text-lg text-gray-light">"Taqsit"da biz har bir biznes noyob ekanligini tushunamiz va biznes ehtiyojlaringizni qadrlaymiz.</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.immediate_delivery.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.immediate_delivery.text') }}</p>
           </div>
         </div>
         <div class="advantages-card">
           <NuxtImg
-            src="https://www.taqsit.uz/_next/image?url=%2Fimages%2Ffeatures%2Fcustomer.png&w=128&q=75"
+            src="advantage.png"
             :width="120"
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">Mijozga yo'naltirilgan yondashuv</h6>
-            <p class="text-lg text-gray-light">"Taqsit"da biz har bir biznes noyob ekanligini tushunamiz va biznes ehtiyojlaringizni qadrlaymiz.</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.for_any_event.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.for_any_event.text') }}</p>
           </div>
         </div>
         <div class="advantages-card">
           <NuxtImg
-            src="https://www.taqsit.uz/_next/image?url=%2Fimages%2Ffeatures%2Fcustomer.png&w=128&q=75"
+            src="advantage.png"
             :width="120"
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">Mijozga yo'naltirilgan yondashuv</h6>
-            <p class="text-lg text-gray-light">"Taqsit"da biz har bir biznes noyob ekanligini tushunamiz va biznes ehtiyojlaringizni qadrlaymiz.</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.secure_payment_system.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.secure_payment_system.text') }}</p>
           </div>
         </div>
         <div class="advantages-card">
           <NuxtImg
-            src="https://www.taqsit.uz/_next/image?url=%2Fimages%2Ffeatures%2Fcustomer.png&w=128&q=75"
+            src="advantage.png"
             :width="120"
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">Mijozga yo'naltirilgan yondashuv</h6>
-            <p class="text-lg text-gray-light">"Taqsit"da biz har bir biznes noyob ekanligini tushunamiz va biznes ehtiyojlaringizni qadrlaymiz.</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.always_your_side.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.always_your_side.text') }}</p>
+          </div>
+        </div>
+        <div class="advantages-card">
+          <NuxtImg
+            src="advantage.png"
+            :width="120"
+            :height="120"
+          />
+          <div>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.make_loved_happy.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.make_loved_happy.text') }}</p>
+          </div>
+        </div>
+        <div class="advantages-card">
+          <NuxtImg
+            src="advantage.png"
+            :width="120"
+            :height="120"
+          />
+          <div>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.purchases_saved_history.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.purchases_saved_history.text') }}</p>
           </div>
         </div>
       </div>

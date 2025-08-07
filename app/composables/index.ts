@@ -2,7 +2,7 @@ export const scrollToSmooth = (name: string): void => {
     const element = document.getElementById(name)
     let scrollTop;
     if (typeof element?.scrollHeight === 'number') {
-        scrollTop = element?.offsetTop - 77
+        scrollTop = element?.offsetTop - 100
     }
     if (typeof scrollTop === 'number') {
         window.scrollTo({ top: scrollTop, left: 0, behavior: 'smooth' })

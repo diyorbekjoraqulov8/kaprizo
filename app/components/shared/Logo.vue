@@ -4,7 +4,7 @@ interface IProps {
   theme?: 'dark' | 'light'
 }
 
-defineProps<IProps>()
+const props = defineProps<IProps>()
 
 const scrollToSmooth = (): void => {
   window.scrollTo({
@@ -16,11 +16,9 @@ const scrollToSmooth = (): void => {
 
 <template>
   <div @click="scrollToSmooth" style="font-size: 2.25rem; line-height: 2.5rem; cursor: pointer;">
-    <template v-if="theme === 'light'">
-      <IconLogoWhite/>
-    </template>
-    <template v-else>
-      <LazyIconLogo/>
-    </template>
+    <LazyIconLogo
+        class="text-6xl"
+        :class="[ props?.theme === 'light' ? 'text-[#111F42]' : 'text-white' ]"
+    />
   </div>
 </template>

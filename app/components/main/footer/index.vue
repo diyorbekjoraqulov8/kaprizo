@@ -6,7 +6,7 @@
   <footer class="py-14 lg:py-28 bg-gray px-6 lg:px-0">
     <div class="container flex flex-col lg:flex-row gap-12">
       <div class="lg:w-3/5 flex flex-col gap-8">
-        <SharedLogo theme="light"/>
+        <SharedLogo theme="dark"/>
 
         <p class="text-muted">Biznes uchun zamonaviy raqamlashtirilgan texnologik yechimlar</p>
 
@@ -29,7 +29,7 @@
       <ul class="lg:w-1/5 flex flex-col gap-4 text-muted text-base">
         <li class="flex gap-2">
           <LazyIconMail class="flex-shrink text-xl text-gray-400"/>
-          <p class="leading-5">info@taqsit.uz</p>
+          <p class="leading-5">info@kaprizo.uz</p>
         </li>
         <li class="flex gap-2">
           <LazyIconPhone class="text-xl text-gray-400"/>

@@ -5,6 +5,76 @@
     "en": "English"
   },
   "income": {
-    "title": "Savdo aylanmangizni sezilarli oshiring!"
+    "gift": "Sovg‘a",
+    "text_two": "tanlashni osonlashtiring",
+    "text_three": "vaucherlarni",
+    "text_four": "ilova orqali yuboring!",
+    "install_app": "Ilovani yuklab olish",
+    "text_six": "Do‘konlar bo‘ylab vaucherlarni tanlang, mobil ilova orqali yaqinlaringizga tez va qulay tarzda yuboring",
+    "text_six_2": "Sovg‘a qilish endi bir necha bosqichda!"
+  },
+  "about": {
+    "title": "Kaprizo bu...",
+    "text": "Bu mobil ilova orqali foydalanuvchilar turli do‘konlar uchun vaucherlarni tanlab, yaqinlariga sovg‘a sifatida yuborishlari mumkin. Sovg‘a berish jarayonini tez, oson va zamonaviy qilamiz!"
+  },
+  "advantages": {
+    "fast_and_easy": {
+      "title": "Tez va oson xarid",
+      "text": "Vaucherlarni atigi bir necha bosqichda tanlang va yuboring"
+    },
+    "wide_selection": {
+      "title": "Keng tanlov",
+      "text": "Ommabop do‘konlar va brendlarning vaucherlari bir ilovada"
+    },
+    "immediate_delivery": {
+      "title": "Zudlik bilan yetkazib berish",
+      "text": "Vaucherlar darhol SMS yoki email orqali yetkaziladi"
+    },
+    "for_any_event": {
+      "title": "Har qanday tadbir uchun",
+      "text": "Tug‘ilgan kun, to‘y yoki bayram – har doim mos sovg‘a"
+    },
+    "secure_payment_system": {
+      "title": "Xavfsiz to‘lov tizimi",
+      "text": "Ma’lumotlaringiz himoyalangan, to‘lovlar ishonchli"
+    },
+    "always_your_side": {
+      "title": "Har doim yoningizda",
+      "text": "Istalgan joyda, istalgan vaqtda vaucher yuboring"
+    },
+    "make_loved_happy": {
+      "title": "Yaqinlaringizni quvontiring",
+      "text": "Sovg‘a bilan quvonch ulashing – ilova bilan bu juda oson!"
+    },
+    "purchases_saved_history": {
+      "title": "Barcha xaridlar tarixda saqlanadi",
+      "text": "Qaysi vaucher, qachon va kimga – hammasi arxivda"
+    }
+  },
+  "faq": {
+    "subtitle": "Ko’p beriladigan savollar",
+    "title": "TEZ TEZ so'raladigan savollar va javoblari",
+    "question_list": {
+      "one": {
+        "question": "Qanday qilib vaucher sotib olsam bo‘ladi?",
+        "answer": "Ilovaga kirib, vaucher tanlang, ro‘yxatdan o‘ting va xavfsiz to‘lov orqali xaridni yakunlang"
+      },
+      "two": {
+        "question": "Vaucher qayerga yetkaziladi?",
+        "answer": "Vaucher ko‘rsatilgan elektron pochta yoki telefon raqamiga yuboriladi."
+      },
+      "three": {
+        "question": "To‘lov xavfsizmi?",
+        "answer": "Ha, to‘lovlar shifrlangan va ishonchli tizim orqali amalga oshiriladi."
+      },
+      "four": {
+        "question": "Ro‘yxatdan o‘tmasdan vaucher xarid qilsa bo‘ladimi?",
+        "answer": "Yo‘q, xarid qilish uchun qisqa ro‘yxatdan o‘tish talab qilinadi."
+      },
+      "five": {
+        "question": "Vaucher muddati qancha davom etadi?",
+        "answer": "Har bir vaucherning amal qilish muddati farq qiladi — bu haqda tafsilotlar vaucherda ko‘rsatiladi."
+      }
+    }
   }
 }

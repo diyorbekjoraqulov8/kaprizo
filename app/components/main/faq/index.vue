@@ -1,32 +1,41 @@
 <script setup lang="ts">
 import { Collapse } from 'vue-collapsed'
+import {useI18n} from "vue-i18n";
 
 const isExpanded = ref<number>()
+
+const {t} = useI18n()
 
 const list = computed(() => [
   {
     id: 1,
-    title: 'Home',
-    text: 'description',
+    title: t('faq.question_list.one.question'),
+    text: t('faq.question_list.one.answer'),
     open: isExpanded.value === 1
   },
   {
     id: 2,
-    title: 'Home 2',
-    text: 'description 2',
+    title: t('faq.question_list.two.question'),
+    text: t('faq.question_list.two.answer'),
     open: isExpanded.value === 2
   },
   {
     id: 3,
-    title: 'Home 3',
-    text: 'description 3',
+    title: t('faq.question_list.three.question'),
+    text: t('faq.question_list.three.answer'),
     open: isExpanded.value === 3
   },
   {
     id: 4,
-    title: 'Home 4',
-    text: 'description 4',
+    title: t('faq.question_list.four.question'),
+    text: t('faq.question_list.four.answer'),
     open: isExpanded.value === 4
+  },
+  {
+    id: 5,
+    title: t('faq.question_list.five.question'),
+    text: t('faq.question_list.five.answer'),
+    open: isExpanded.value === 5
   },
 ])
 
@@ -39,9 +48,9 @@ function toggleCollapse(collapseId: number) {
 <template>
   <section id="faq" class="py-16 lg:py-32 bg-light">
     <div class="container">
-      <p class="text-center mb-2 text-gray-700">Ko’p beriladigan savollar</p>
+      <p class="text-center mb-2 text-gray-700">{{ t('faq.subtitle') }}</p>
 
-      <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">Savol-javoblar</h3>
+      <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">{{ t('faq.title') }}</h3>
 
       <ul class="flex flex-col gap-2">
         <li

@@ -4,8 +4,8 @@ const openSidebar = ref(false);
 </script>
 
 <template>
-  <header class="pt-[77px]">
-    <div class="z-40 border-b fixed w-full top-0 left-0 bg-white">
+  <header class="pt-[100px] bg-[#ebd8c5]">
+    <div class="z-40 fixed w-full top-0 left-0 backdrop-blur bg-opacity-90">
       <div class="container py-5 flex items-center justify-between">
         <div
           class="md:hidden text-2xl cursor-pointer p-1"
@@ -13,7 +13,7 @@ const openSidebar = ref(false);
         >
           <LazyIconMenu class="sm:hidden"/>
         </div>
-        <SharedLogo class="hidden md:flex"/>
+        <SharedLogo class="hidden md:flex" theme="light"/>
 
         <TransitionGroup name="list" tag="ul">
           <MainHeaderNavbarMobile

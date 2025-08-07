@@ -8,7 +8,7 @@ const phoneNumber = ref()
   <section id="partner" class="py-16 md:px-16 lg:py-32">
     <div class="container flex gap-4 flex-col lg:flex-row">
       <div class="w-full max-lg:text-center lg:w-1/2">
-        <p class="text-3xl text-dark font-bold mb-2">"Taqsit" bilan hamkorlik</p>
+        <p class="text-3xl text-dark font-bold mb-2">"Kaprizo" bilan hamkorlik</p>
         <p class="text-gray-light text-lg">Raqamingizni qoldiring, siz bilan bog’lanamiz</p>
       </div>
       <div class="w-full lg:w-1/2 flex flex-col gap-6">

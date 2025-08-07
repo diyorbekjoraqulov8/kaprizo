@@ -5,6 +5,76 @@
     "en": "English"
   },
   "income": {
-    "title": "Significantly increase your sales turnover!"
+    "gift": "Gifting",
+    "text_two": "Made Easy Send Vouchers",
+    "text_three": "with",
+    "text_four": "Our App!",
+    "install_app": "Download App",
+    "text_six": "Choose vouchers from your favorite stores and send them to loved ones in just a few taps using our mobile app",
+    "text_six_2": "Gifting has never been this simple!"
+  },
+  "about": {
+    "title": "Kaprizo is...",
+    "text": "This mobile app allows users to choose vouchers from various stores and send them as gifts to their loved ones. We make gifting easy, fast, and modern!"
+  },
+  "advantages": {
+    "fast_and_easy": {
+      "title": "Fast & Easy Purchase",
+      "text": "Select and send vouchers in just a few simple steps"
+    },
+    "wide_selection": {
+      "title": "Wide Selection",
+      "text": "Vouchers from top stores and brands — all in one app"
+    },
+    "immediate_delivery": {
+      "title": "Instant Delivery",
+      "text": "Vouchers are delivered instantly via SMS or email"
+    },
+    "for_any_event": {
+      "title": "Perfect for Any Occasion",
+      "text": "Birthday, wedding, or holiday — always a perfect gift"
+    },
+    "secure_payment_system": {
+      "title": "Secure Payment System",
+      "text": "Your data is protected, and payments are safe"
+    },
+    "always_your_side": {
+      "title": "Always With You",
+      "text": "Send vouchers anytime, anywhere"
+    },
+    "make_loved_happy": {
+      "title": "Delight Your Loved Ones",
+      "text": "Spread joy with a gift – it’s simple with the app!"
+    },
+    "purchases_saved_history": {
+      "title": "Purchase History Saved",
+      "text": "What, when, and to whom — everything saved in your history"
+    }
+  },
+  "faq": {
+    "subtitle": "Frequently asked questions",
+    "title": "Frequently asked questions and answers",
+    "question_list": {
+      "one": {
+        "question": "How can I purchase a voucher?",
+        "answer": "Open the app, select a voucher, register, and complete your purchase with secure payment"
+      },
+      "two": {
+        "question": "Where is the voucher delivered?",
+        "answer": "The voucher is delivered to the provided email address or phone number"
+      },
+      "three": {
+        "question": "Is the payment secure?",
+        "answer": "Yes, all payments are encrypted and processed through a secure system"
+      },
+      "four": {
+        "question": "Can I buy a voucher without registration??",
+        "answer": "No, a quick registration is required to complete the purchase"
+      },
+      "five": {
+        "question": "What is the voucher’s validity period?",
+        "answer": "The validity period depends on the voucher — details are provided on the voucher itself."
+      }
+    }
   }
 }
