@@ -76,5 +76,23 @@
         "answer": "Har bir vaucherning amal qilish muddati farq qiladi — bu haqda tafsilotlar vaucherda ko‘rsatiladi."
       }
     }
+  },
+  "instructions": {
+    "select_app": {
+      "title": "Vaucher tanlang",
+      "text": "O‘zingiz yoki yaqinlaringiz uchun eng mos vaucherlarni do‘konlar ro‘yxatidan tanlang"
+    },
+    "register_app": {
+      "title": "Ilovada ro‘yxatdan o‘ting",
+      "text": "Shaxsiy ma’lumotlaringizni kiriting va ro‘yxatdan o‘tib, ilova imkoniyatlaridan to‘liq foydalaning"
+    },
+    "open_app": {
+      "title": "To‘lovni amalga oshiring",
+      "text": "Xaridni tasdiqlang va xavfsiz to‘lov tizimi orqali vaucher uchun to‘lovni amalga oshiring"
+    },
+    "delivered_voucher": {
+      "title": "Vaucher yetkaziladi",
+      "text": "Tanlangan vaucher ko‘rsatilgan manzilga zudlik bilan yetkaziladi"
+    }
   }
 }

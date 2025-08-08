@@ -76,5 +76,23 @@
         "answer": "The validity period depends on the voucher — details are provided on the voucher itself."
       }
     }
+  },
+  "instructions": {
+    "select_app": {
+      "title": "Choose a voucher",
+      "text": "Browse through our store selection and pick the perfect voucher for yourself or a loved one"
+    },
+    "register_app": {
+      "title": "Register in the app",
+      "text": "Fill in your details and sign up to unlock the full functionality of the app"
+    },
+    "open_app": {
+      "title": "Make the payment",
+      "text": "Confirm your purchase and pay securely through our trusted payment system"
+    },
+    "delivered_voucher": {
+      "title": "Receive the voucher",
+      "text": "Your selected voucher will be instantly delivered to the provided address"
+    }
   }
 }

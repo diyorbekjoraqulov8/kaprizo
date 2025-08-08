@@ -21,7 +21,7 @@ function clickPage(name: TPageIds) {
 <template>
   <nav>
     <ul
-        class="flex items-center justify-center font-medium text-gray-600"
+        class="navbar-list flex items-center justify-center font-medium text-gray-600"
         :class="[isMobile ? '!flex-col !items-start pl-2' : 'gap-7']"
     >
       <li @click="() => clickPage('income')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Asosiy</li>
@@ -33,7 +33,10 @@ function clickPage(name: TPageIds) {
 </template>
 
 <style scoped>
+.navbar-list {
+  font-family: "Bebas Neue", sans-serif;
+}
 .nav-item {
-  @apply cursor-pointer rounded text-gray-light hover:text-black;
+  @apply cursor-pointer rounded text-gray-light hover:text-black tracking-wider text-lg;
 }
 </style>

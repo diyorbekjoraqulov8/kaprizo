@@ -11,6 +11,8 @@
 
       <MainAdvantages />
 
+      <MainInstructions />
+
       <MainFaq />
 
       <MainPartner />

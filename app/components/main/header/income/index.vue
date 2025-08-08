@@ -80,6 +80,7 @@ const {t} = useI18n()
   }
   &_six {
     font-size: 18px;
+    font-family: sans-serif;
     line-height: 1.2;
     color: #d8a654;
     word-break: break-all;

@@ -9,14 +9,7 @@ const {t} = useI18n()
     <div class="container about_content flex flex-col gap-10 py-20 md:flex-row lg:py-36 lg:gap-20">
       <h2 class="w-full md:w-2/5 text-5xl font-bold inline-block whitespace-nowrap text-[#d3ae42] bg-clip-text text-left z-10">{{ t('about.title') }}</h2>
 
-      <div>
-        <h2 class="text-[#9CA3AF] font-medium text-xl leading-8 mb-6 z-20 relative">{{ t('about.text') }}</h2>
-
-        <div class="flex gap-4 text-white text-sm z-10">
-          <div class="rounded px-4 py-1 pb-2 bg-[#374151] text-[#d1d5db]">Qarz bo'yicha foizlarsiz</div>
-          <div class="rounded px-4 py-1 pb-2 bg-[#374151] text-[#d1d5db]">Penyalarsiz</div>
-        </div>
-      </div>
+      <h2 class="text-[#9CA3AF] font-medium text-xl leading-8 mb-6 z-20 relative">{{ t('about.text') }}</h2>
     </div>
   </section>
 </template>

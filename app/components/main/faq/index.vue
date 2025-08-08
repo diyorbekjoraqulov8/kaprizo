@@ -46,7 +46,7 @@ function toggleCollapse(collapseId: number) {
 </script>
 
 <template>
-  <section id="faq" class="py-16 lg:py-32 bg-light">
+  <section id="faq" class="py-16 lg:py-32">
     <div class="container">
       <p class="text-center mb-2 text-gray-700">{{ t('faq.subtitle') }}</p>
 

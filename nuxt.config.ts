@@ -33,7 +33,6 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Oswald: true,
       'Great Vibes': true,
       'Bebas Neue': true,
     }

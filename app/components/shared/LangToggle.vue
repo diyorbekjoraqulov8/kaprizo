@@ -35,7 +35,7 @@ function closeLangDropdown() {
     </LazySharedButton>
 
     <TransitionGroup name="lang-toggle" tag="ul" class="relative text-primary">
-      <div ref="target" v-if="isOpenLangDropdown" class="flex flex-col absolute top-full -left-1/2 w-28 shadow bg-white rounded-md transition-all">
+      <div ref="target" v-if="isOpenLangDropdown" class="flex flex-col absolute top-full -left-1/2 w-32 shadow bg-white rounded-md transition-all overflow-hidden">
         <switch-locale-path-link
             locale="uz"
             class="flex items-center gap-2 text-sm hover:bg-light px-3 py-1.5"
