@@ -33,10 +33,7 @@ function clickPage(name: TPageIds) {
 </template>
 
 <style scoped>
-.navbar-list {
-  font-family: "Bebas Neue", sans-serif;
-}
 .nav-item {
-  @apply cursor-pointer rounded text-gray-light hover:text-black tracking-wider text-lg;
+  @apply cursor-pointer rounded text-gray-light hover:text-black text-base;
 }
 </style>

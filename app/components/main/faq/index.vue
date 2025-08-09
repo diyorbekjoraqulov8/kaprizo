@@ -60,9 +60,10 @@ function toggleCollapse(collapseId: number) {
             class="flex items-center gap-6 border p-6 cursor-pointer rounded-md"
             @click="() => toggleCollapse(item.id)"
           >
-            <button class="p-2 bg-muted rounded-md">
-              <LazyIconMinus v-if="item.open" class="text-xl text-primary"/>
-              <LazyIconPlus v-else class="text-xl text-primary"/>
+            <button class="p-2 bg-light rounded-md text-xl text-primary">
+              <IconTop
+                :class="[ !item.open && 'rotate-180' ]"
+              />
             </button>
 
             <p class="text-base">{{ item.title }}</p>
