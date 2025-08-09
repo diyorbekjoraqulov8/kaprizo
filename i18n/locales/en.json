@@ -6,12 +6,9 @@
   },
   "income": {
     "gift": "Gifting",
-    "text_two": "Made Easy Send Vouchers",
-    "text_three": "with",
-    "text_four": "Our App!",
-    "install_app": "Download App",
-    "text_six": "Choose vouchers from your favorite stores and send them to loved ones in just a few taps using our mobile app",
-    "text_six_2": "Gifting has never been this simple!"
+    "gift_two": "Made Easy Send",
+    "text": "Vouchers",
+    "text_two": "with our App!"
   },
   "about": {
     "title": "Kaprizo is...",

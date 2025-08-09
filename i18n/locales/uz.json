@@ -6,12 +6,9 @@
   },
   "income": {
     "gift": "Sovg‘a",
-    "text_two": "tanlashni osonlashtiring",
-    "text_three": "vaucherlarni",
-    "text_four": "ilova orqali yuboring!",
-    "install_app": "Ilovani yuklab olish",
-    "text_six": "Do‘konlar bo‘ylab vaucherlarni tanlang, mobil ilova orqali yaqinlaringizga tez va qulay tarzda yuboring",
-    "text_six_2": "Sovg‘a qilish endi bir necha bosqichda!"
+    "gift_two": "tanlashni osonlashtiring",
+    "text": "vaucherlarni",
+    "text_two": "ilova orqali yuboring!"
   },
   "about": {
     "title": "Kaprizo bu...",
