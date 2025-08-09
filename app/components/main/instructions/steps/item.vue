@@ -7,14 +7,14 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="instructions-step_item flex items-start gap-3">
+  <div class="flex items-start gap-3">
     <div class="!h-full">
-      <div class="instructions-step_item-number w-12 h-12 bg-white rounded-full border flex justify-center items-center text-gray-light flex-shrink-0">
+      <div class="w-7 h-7 flex justify-center items-center">
         {{ index }}
       </div>
     </div>
 
-    <div class="w-full pb-20">
+    <div class="w-full">
       <h2 class="text-lg font-bold text-primary">
         {{ title }}
       </h2>

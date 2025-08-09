@@ -1,23 +1,4 @@
 <script setup lang="ts">
-// .instructions-step {
-//   border: 1px solid red;
-// &:deep(&_item:not(:last-child)) {
-//   .instructions-step_item-number {
-//       position: relative;
-//     &:after {
-//         content: '';
-//         position: absolute;
-//         top: 0;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         width: 3px;
-//         height: 100%;
-//         background-color: var(--muted);
-//       }
-//     }
-//   }
-// }
-
 import {useI18n} from "vue-i18n";
 
 const {t} = useI18n()
@@ -44,7 +25,7 @@ const list = computed(() => [
 </script>
 
 <template>
-  <div class="instructions-step w-full lg:w-2/3 flex flex-col">
+  <div class="instructions-step w-full flex flex-col gap-6">
     <MainInstructionsStepsItem
       v-for="(item, index) in list"
       :ke="index"

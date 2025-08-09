@@ -11,7 +11,7 @@ const { t } = useI18n()
 
       <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">"Kaprizo"ning afzalliklari</h3>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="grid grid-cols-1 lg:grid-cols-2 max-sm:text-center">
         <div class="advantages-card">
           <NuxtImg
             src="advantage.png"
