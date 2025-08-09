@@ -78,28 +78,6 @@ const { t } = useI18n()
             <p class="text-lg text-gray-light">{{ t('advantages.always_your_side.text') }}</p>
           </div>
         </div>
-        <div class="advantages-card">
-          <NuxtImg
-            src="advantage.png"
-            :width="120"
-            :height="120"
-          />
-          <div>
-            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.make_loved_happy.title') }}</h6>
-            <p class="text-lg text-gray-light">{{ t('advantages.make_loved_happy.text') }}</p>
-          </div>
-        </div>
-        <div class="advantages-card">
-          <NuxtImg
-            src="advantage.png"
-            :width="120"
-            :height="120"
-          />
-          <div>
-            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.purchases_saved_history.title') }}</h6>
-            <p class="text-lg text-gray-light">{{ t('advantages.purchases_saved_history.text') }}</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
