@@ -41,7 +41,7 @@
         </li>
         <li class="flex gap-2">
           <LazyIconPhone class="text-xl text-gray-400"/>
-          <p class="leading-5">+998 99 877 51 84</p>
+          <a href="tel:+998909954908">+998 90 995 49 08</a>
         </li>
         <li class="flex gap-2">
           <LazyIconMarker class="flex-shrink-0 text-xl text-gray-400"/>
