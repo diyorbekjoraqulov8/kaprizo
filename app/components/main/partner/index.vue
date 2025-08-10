@@ -12,7 +12,6 @@ const phoneNumber = ref()
         <p class="text-gray-light text-lg">Raqamingizni qoldiring, siz bilan bog’lanamiz</p>
       </div>
       <div class="w-full lg:w-1/2 flex flex-col gap-6">
-        {{phoneNumber}}
         <input
             class="outline-none border focus:border-primary px-5 py-4 rounded-full"
             placeholder="+998(_)"
