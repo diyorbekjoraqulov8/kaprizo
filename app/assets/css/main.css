@@ -19,7 +19,8 @@ body {
     font-family: sans-serif;
 }
 
-button {
+button,
+.shared-btn {
     transition: transform 0.3s;
     &:active {
         transform: scale(0.92);

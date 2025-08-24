@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import {useI18n} from "vue-i18n";
+const localePath = useLocalePath();
 
 const openSidebar = ref(false);
+
+const {t} = useI18n();
 </script>
 
 <template>
@@ -23,11 +27,14 @@ const openSidebar = ref(false);
           />
         </TransitionGroup>
 
-
-
         <MainHeaderNavbar class="hidden sm:block" :is-mobile="false"/>
 
-        <div>
+        <div class="flex items-center gap-4">
+          <SharedButton :to="localePath('/voucher-status')" type="primary" class="flex items-center gap-2">
+            {{ t('check_voucher') }}
+            <LazyIconSearch class="text-base"/>
+          </SharedButton>
+
           <SharedLangToggle />
         </div>
       </div>
