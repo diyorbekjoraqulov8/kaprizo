@@ -63,6 +63,7 @@ function toggleCollapse(collapseId: number) {
             <button class="p-2 bg-light rounded-md text-xl text-primary">
               <IconTop
                 :class="[ !item.open && 'rotate-180' ]"
+                class="transition-transform"
               />
             </button>
 

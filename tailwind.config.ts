@@ -4,6 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        gold: {
+          text: '#a8915b'
+        },
         primary: '#111F42',
         dark: '#111928',
         gray: {

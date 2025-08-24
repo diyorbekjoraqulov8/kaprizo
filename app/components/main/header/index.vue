@@ -33,7 +33,6 @@ const openSidebar = ref(false);
       </div>
     </div>
 
-    <MainHeaderIncome />
   </header>
 </template>
 

@@ -4,7 +4,7 @@ const {t} = useI18n()
 </script>
 
 <template>
-  <div id="income" class="income h-[calc(80dvh-100px)] lg:h-[calc(100dvh-100px)]">
+  <div id="income" class="income h-[calc(80dvh-100px)] lg:h-[calc(100dvh-100px)] bg-[#ebd8c5]">
     <div class="container h-full flex items-center justify-center">
       <div class="income_img w-1/6 sm:w-1/3 lg:w-1/2 h-full flex items-center">
         <LazyNuxtImg
