@@ -5,47 +5,41 @@
     "en": "Eng"
   },
   "income": {
-    "gift": "Sovg‘a",
-    "gift_two": "tanlashni osonlashtiring",
-    "text": "vaucherlarni",
-    "text_two": "ilova orqali yuboring!"
+    "gift": "Yaqinlaringizni",
+    "gift_two": "xursand qilish endi oson",
+    "text": "Ularga",
+    "text_two": "sovg‘a vaucherlarni yuboring"
   },
   "about": {
     "title": "Kaprizo bu...",
-    "text": "Bu mobil ilova orqali foydalanuvchilar turli do‘konlar uchun vaucherlarni tanlab, yaqinlariga sovg‘a sifatida yuborishlari mumkin. Sovg‘a berish jarayonini tez, oson va zamonaviy qilamiz!"
+    "text": "Sovg‘a vaucherlari jamlangan mobil marketpleys. Siz masofadan sovg‘ani tanlang, biz esa uni yetkazib beramiz."
   },
   "advantages": {
-    "fast_and_easy": {
-      "title": "Tez va oson xarid",
-      "text": "Vaucherlarni atigi bir necha bosqichda tanlang va yuboring"
-    },
+    "subtitle": "Nima uchun “Kaprizo”?",
+    "title": "“Kaprizo”ning afzalliklari",
     "wide_selection": {
       "title": "Keng tanlov",
-      "text": "Ommabop do‘konlar va brendlarning vaucherlari bir ilovada"
+      "text": "Ommabop do‘konlar va servis shaxobchalari bir ilovada"
     },
-    "immediate_delivery": {
-      "title": "Zudlik bilan yetkazib berish",
-      "text": "Vaucherlar darhol SMS yoki email orqali yetkaziladi"
+    "fast_and_easy": {
+      "title": "Tez va oson xarid",
+      "text": "Sovg‘ani atigi bir zumda tanlang"
+    },
+    "remote_control": {
+      "title": "Masofadan boshqarish",
+      "text": "Sovg‘ani dunyoning istalgan joyidan tanlang"
     },
     "for_any_event": {
-      "title": "Har qanday tadbir uchun",
-      "text": "Tug‘ilgan kun, to‘y yoki bayram – har doim mos sovg‘a"
+      "title": "Xar qanday tadbir va bayram uchun",
+      "text": "Barcha bayramlarga mos sovg‘alar topiladi"
     },
-    "secure_payment_system": {
-      "title": "Xavfsiz to‘lov tizimi",
-      "text": "Ma’lumotlaringiz himoyalangan, to‘lovlar ishonchli"
+    "saving_money": {
+      "title": "Mablag‘lar tejamlanishi",
+      "text": "Vaucher narxi evaziga komissiyasiz maxsulot va xizmat oling"
     },
-    "always_your_side": {
-      "title": "Har doim yoningizda",
-      "text": "Istalgan joyda, istalgan vaqtda vaucher yuboring"
-    },
-    "make_loved_happy": {
-      "title": "Yaqinlaringizni quvontiring",
-      "text": "Sovg‘a bilan quvonch ulashing – ilova bilan bu juda oson!"
-    },
-    "purchases_saved_history": {
-      "title": "Barcha xaridlar tarixda saqlanadi",
-      "text": "Qaysi vaucher, qachon va kimga – hammasi arxivda"
+    "additional_services": {
+      "title": "Qo‘shimcha xizmatlar",
+      "text": "Vaucher bilan gullar, shirinliklar yuborilishi yulga qo‘yiladi"
     }
   },
   "faq": {
@@ -58,7 +52,7 @@
       },
       "two": {
         "question": "Vaucher qayerga yetkaziladi?",
-        "answer": "Vaucher ko‘rsatilgan elektron pochta yoki telefon raqamiga yuboriladi."
+        "answer": "Xarid paytida ko‘rsatilgan manzilingizga yetkaziladi, yoki o‘zingizga yoki tanlagan odamizga"
       },
       "three": {
         "question": "To‘lov xavfsizmi?",
@@ -71,25 +65,40 @@
       "five": {
         "question": "Vaucher muddati qancha davom etadi?",
         "answer": "Har bir vaucherning amal qilish muddati farq qiladi — bu haqda tafsilotlar vaucherda ko‘rsatiladi."
+      },
+      "six": {
+        "question": "Vaucher ishlatish shartlari qanday?",
+        "answer": "1. Vaucherni do‘konda taqdim etgan shahs uni maxsulot va xizmatlarga almashtirilishi mumkin.",
+        "answer2": "2. Vaucher ko‘rsatilgan muddatgacha ishlatilishi mumkin, undan keyin Tizim operatoriga murojat qilib Ofertada ko‘rsatilgan shartlarda pulingizni qaytarishingiz mumkin.",
+        "answer3": "3. Vaucherda ko‘rsatilgan summa to‘liq ishlatilishi shart, xaridingiz undan oshsa qo‘shimcha to‘lov qilasiz.",
+        "answer4": "4. Vaucherni qaytarmohchi bo‘lsangiz, Operatorga murojat qilasiz. Ofyortada ko‘rsatilgan komissiya vaucher narxidan ushlanib qolinadi."
       }
     }
   },
   "instructions": {
-    "select_app": {
-      "title": "Vaucher tanlang",
-      "text": "O‘zingiz yoki yaqinlaringiz uchun eng mos vaucherlarni do‘konlar ro‘yxatidan tanlang"
+    "title": "Ishlatish tartibi",
+    "download_app": {
+      "title": "Ilovani App Store va Google Playdan yuklang",
+      "text": "IOS va Android qurilmalari uchun mavjud"
+    },
+    "payment": {
+      "title": "To‘lovni amalga oshiring",
+      "text": "Xaridni tasdiqlang va xavfsiz to‘lov tizimi orqali vaucher uchun to‘lovni amalga oshiring"
     },
     "register_app": {
       "title": "Ilovada ro‘yxatdan o‘ting",
       "text": "Shaxsiy ma’lumotlaringizni kiriting va ro‘yxatdan o‘tib, ilova imkoniyatlaridan to‘liq foydalaning"
     },
-    "open_app": {
-      "title": "To‘lovni amalga oshiring",
-      "text": "Xaridni tasdiqlang va xavfsiz to‘lov tizimi orqali vaucher uchun to‘lovni amalga oshiring"
+    "select_app": {
+      "title": "Vaucher tanlang",
+      "text": "O‘zingiz yoki yaqinlaringiz uchun eng mos vaucherlarni do‘konlar ro‘yxatidan tanlang"
     },
     "delivered_voucher": {
       "title": "Vaucher yetkaziladi",
       "text": "Tanlangan vaucher ko‘rsatilgan manzilga zudlik bilan yetkaziladi"
     }
+  },
+  "footer": {
+    "description": "Barcha “kapriz”laringizga javob topamiz"
   }
 }

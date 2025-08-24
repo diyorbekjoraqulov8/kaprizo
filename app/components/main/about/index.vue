@@ -16,7 +16,7 @@ const {t} = useI18n()
       </div>
 
       <div class="flex flex-col justify-center gap-4">
-        <h2 class="w-full md:w-2/5 text-4xl sm:text-5xl font-bold whitespace-nowrap text-[#d3ae42] text-left">{{ t('about.title') }}</h2>
+        <h2 class="w-full md:w-2/5 text-4xl sm:text-5xl font-bold whitespace-nowrap text-[#d3ae42] text-left">“{{ t('about.title') }}”</h2>
 
         <h2 class="text-[#9CA3AF] font-medium text-base sm:text-xl leading-8 mb-6 z-20 relative">{{ t('about.text') }}</h2>
       </div>

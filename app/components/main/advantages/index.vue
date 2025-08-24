@@ -7,11 +7,22 @@ const { t } = useI18n()
 <template>
   <section id="advantages" class="py-16 lg:py-32">
     <div class="container">
-      <h2 class="text-center mb-2 text-gray-700">Nima uchun "Kaprizo" bilan ishlash qulay?</h2>
+      <h2 class="text-center mb-2 text-gray-700">{{ t('advantages.subtitle') }}</h2>
 
-      <h3 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">"Kaprizo"ning afzalliklari</h3>
+      <h1 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">{{ t('advantages.title') }}</h1>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 max-sm:text-center">
+        <div class="advantages-card">
+          <NuxtImg
+              src="advantage.png"
+              :width="120"
+              :height="120"
+          />
+          <div>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.wide_selection.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.wide_selection.text') }}</p>
+          </div>
+        </div>
         <div class="advantages-card">
           <NuxtImg
             src="advantage.png"
@@ -30,19 +41,8 @@ const { t } = useI18n()
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.wide_selection.title') }}</h6>
-            <p class="text-lg text-gray-light">{{ t('advantages.wide_selection.text') }}</p>
-          </div>
-        </div>
-        <div class="advantages-card">
-          <NuxtImg
-            src="advantage.png"
-            :width="120"
-            :height="120"
-          />
-          <div>
-            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.immediate_delivery.title') }}</h6>
-            <p class="text-lg text-gray-light">{{ t('advantages.immediate_delivery.text') }}</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.remote_control.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.remote_control.text') }}</p>
           </div>
         </div>
         <div class="advantages-card">
@@ -63,8 +63,8 @@ const { t } = useI18n()
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.secure_payment_system.title') }}</h6>
-            <p class="text-lg text-gray-light">{{ t('advantages.secure_payment_system.text') }}</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.saving_money.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.saving_money.text') }}</p>
           </div>
         </div>
         <div class="advantages-card">
@@ -74,8 +74,8 @@ const { t } = useI18n()
             :height="120"
           />
           <div>
-            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.always_your_side.title') }}</h6>
-            <p class="text-lg text-gray-light">{{ t('advantages.always_your_side.text') }}</p>
+            <h6 class="text-2xl font-semibold mb-2">{{ t('advantages.additional_services.title') }}</h6>
+            <p class="text-lg text-gray-light">{{ t('advantages.additional_services.text') }}</p>
           </div>
         </div>
       </div>

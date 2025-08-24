@@ -5,47 +5,41 @@
     "en": "Eng"
   },
   "income": {
-    "gift": "Gifting",
-    "gift_two": "Made Easy Send",
-    "text": "Vouchers",
-    "text_two": "with our App!"
+    "gift": "It's now easy",
+    "gift_two": "to make your loved ones happy",
+    "text": "Send them",
+    "text_two": "gift vouchers"
   },
   "about": {
-    "title": "Kaprizo is...",
-    "text": "This mobile app allows users to choose vouchers from various stores and send them as gifts to their loved ones. We make gifting easy, fast, and modern!"
+    "title": "“Kaprizo is...",
+    "text": "A mobile marketplace with gift vouchers. You choose a gift remotely, and we deliver it."
   },
   "advantages": {
-    "fast_and_easy": {
-      "title": "Fast & Easy Purchase",
-      "text": "Select and send vouchers in just a few simple steps"
-    },
+    "subtitle": "Nima uchun “Kaprizo”?",
+    "title": "“Kaprizo”ning afzalliklari",
     "wide_selection": {
       "title": "Wide Selection",
-      "text": "Vouchers from top stores and brands — all in one app"
+      "text": "Popular stores and service centers in one app"
     },
-    "immediate_delivery": {
-      "title": "Instant Delivery",
-      "text": "Vouchers are delivered instantly via SMS or email"
+    "fast_and_easy": {
+      "title": "Fast & Easy Purchase",
+      "text": "Choose a gift in just a moment"
+    },
+    "remote_control": {
+      "title": "Remote control",
+      "text": "Choose a gift from anywhere in the world"
     },
     "for_any_event": {
-      "title": "Perfect for Any Occasion",
-      "text": "Birthday, wedding, or holiday — always a perfect gift"
+      "title": "For any event and celebration",
+      "text": "Gifts for all holidays are available"
     },
-    "secure_payment_system": {
-      "title": "Secure Payment System",
-      "text": "Your data is protected, and payments are safe"
+    "saving_money": {
+      "title": "Savings",
+      "text": "Get products and services without commission for the price of the voucher\""
     },
-    "always_your_side": {
-      "title": "Always With You",
-      "text": "Send vouchers anytime, anywhere"
-    },
-    "make_loved_happy": {
-      "title": "Delight Your Loved Ones",
-      "text": "Spread joy with a gift – it’s simple with the app!"
-    },
-    "purchases_saved_history": {
-      "title": "Purchase History Saved",
-      "text": "What, when, and to whom — everything saved in your history"
+    "additional_services": {
+      "title": "Additional services",
+      "text": "Sending flowers and sweets with vouchers is now possible"
     }
   },
   "faq": {
@@ -58,7 +52,7 @@
       },
       "two": {
         "question": "Where is the voucher delivered?",
-        "answer": "The voucher is delivered to the provided email address or phone number"
+        "answer": "It will be delivered to the address you specified during purchase, either to yourself or to a person of your choice."
       },
       "three": {
         "question": "Is the payment secure?",
@@ -71,25 +65,40 @@
       "five": {
         "question": "What is the voucher’s validity period?",
         "answer": "The validity period depends on the voucher — details are provided on the voucher itself."
+      },
+      "six": {
+        "question": "What are the conditions for using a voucher?",
+        "answer": "1. The person presenting the voucher in the store can exchange it for products and services.",
+        "answer2": "2. The voucher can be used until the specified period, after which you can contact the System Operator and get a refund under the conditions specified in the Offer.",
+        "answer3": "3. The amount indicated on the voucher must be used in full, if your purchase exceeds it, you will pay extra.",
+        "answer4": "4. If you wish to return the voucher, please contact the Operator. The commission specified in the offer will be deducted from the voucher price."
       }
     }
   },
   "instructions": {
-    "select_app": {
-      "title": "Choose a voucher",
-      "text": "Browse through our store selection and pick the perfect voucher for yourself or a loved one"
+    "title": "Ishlatish tartibi",
+    "download_app": {
+      "title": "Ilovani App Store va Google Playdan yuklang",
+      "text": "IOS va Android qurilmalari uchun mavjud"
+    },
+    "payment": {
+      "title": "Make the payment",
+      "text": "Confirm the purchase and make the payment for the voucher through a secure payment system"
     },
     "register_app": {
       "title": "Register in the app",
-      "text": "Fill in your details and sign up to unlock the full functionality of the app"
+      "text": "Enter your personal information and, by registering, fully utilize the app's features"
     },
-    "open_app": {
-      "title": "Make the payment",
-      "text": "Confirm your purchase and pay securely through our trusted payment system"
+    "select_app": {
+      "title": "Choose a voucher",
+      "text": "Browse through our store selection and pick the perfect voucher for yourself or a loved one"
     },
     "delivered_voucher": {
       "title": "Receive the voucher",
       "text": "Your selected voucher will be instantly delivered to the provided address"
     }
+  },
+  "footer": {
+    "description": "We will find answers to all your \"kapriz\""
   }
 }

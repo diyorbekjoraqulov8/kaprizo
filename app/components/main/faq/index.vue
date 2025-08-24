@@ -37,6 +37,15 @@ const list = computed(() => [
     text: t('faq.question_list.five.answer'),
     open: isExpanded.value === 5
   },
+  {
+    id: 6,
+    title: t('faq.question_list.six.question'),
+    text: t('faq.question_list.six.answer'),
+    text2: t('faq.question_list.six.answer2'),
+    text3: t('faq.question_list.six.answer3'),
+    text4: t('faq.question_list.six.answer4'),
+    open: isExpanded.value === 6
+  },
 ])
 
 function toggleCollapse(collapseId: number) {
@@ -71,6 +80,9 @@ function toggleCollapse(collapseId: number) {
           </div>
           <collapse :when="item.open">
             <p class="px-6 py-2">{{ item.text }}</p>
+            <p class="px-6 py-2" v-if="item.text2" >{{ item.text2 }}</p>
+            <p class="px-6 py-2" v-if="item.text3" >{{ item.text3 }}</p>
+            <p class="px-6 py-2" v-if="item.text2" >{{ item.text4 }}</p>
           </collapse>
         </li>
       </ul>

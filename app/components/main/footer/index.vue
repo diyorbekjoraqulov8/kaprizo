@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import {useI18n} from "vue-i18n";
 
+const {t} = useI18n();
 </script>
 
 <template>
@@ -8,11 +10,11 @@
       <div class="lg:w-3/5 flex flex-col gap-8">
         <SharedLogo theme="dark"/>
 
-        <p class="text-muted">Biznes uchun zamonaviy raqamlashtirilgan texnologik yechimlar</p>
+        <p class="text-muted">{{ t('footer.description') }}</p>
 
-        <div class="text-muted text-lg flex gap-6">
+        <div class="text-muted text-3xl flex gap-4">
           <router-link to="/">
-            <LazyIconFacebook />
+            <LazyIconTelegram />
           </router-link>
           <router-link to="/">
             <LazyIconInstagram/>
@@ -20,19 +22,14 @@
         </div>
       </div>
       <div class="lg:w-1/5 text-muted text-base">
-        <ul class="flex flex-col gap-4 mb-2">
-          <li>Ilova haqida</li>
-          <li>Afzalliklar</li>
-          <li>Savol-javoblar</li>
-          <li>App Storedan yuklash</li>
-          <li>Play Marketdan yuklash</li>
-        </ul>
-
-<!--        <div>-->
-<!--          <a>-->
-<!--            <LazyNuxtImg src="@/assets/images/google-play.webp"/>-->
-<!--          </a>-->
-<!--        </div>-->
+        <div class="flex flex-col gap-2">
+          <a class="flex w-max">
+            <LazyIconPlayMarket class="text-5xl"/>
+          </a>
+          <a class="flex w-max">
+            <LazyIconAppStore class="text-5xl"/>
+          </a>
+        </div>
       </div>
       <ul class="lg:w-1/5 flex flex-col gap-4 text-muted text-base">
         <li class="flex gap-2">
@@ -41,7 +38,7 @@
         </li>
         <li class="flex gap-2">
           <LazyIconPhone class="text-xl text-gray-400"/>
-          <a href="tel:+998909954908">+998 90 995 49 08</a>
+          <a href="tel:+998988091744">+998 98 809 17 44</a>
         </li>
         <li class="flex gap-2">
           <LazyIconMarker class="flex-shrink-0 text-xl text-gray-400"/>

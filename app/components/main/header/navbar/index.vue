@@ -27,6 +27,7 @@ function clickPage(name: TPageIds) {
       <li @click="() => clickPage('income')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Asosiy</li>
       <li @click="() => clickPage('about')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Ilova haqida</li>
       <li @click="() => clickPage('advantages')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Afzalliklar</li>
+      <li @click="() => clickPage('instructions')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Tartib</li>
       <li @click="() => clickPage('faq')" class="nav-item" :class="[isMobile && 'px-2 pt-2 pb-3 w-full']">Savol-javoblar</li>
     </ul>
   </nav>

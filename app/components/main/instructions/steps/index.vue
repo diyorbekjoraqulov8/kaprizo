@@ -6,16 +6,20 @@ const {t} = useI18n()
 
 const list = computed(() => [
   {
-    title: t('instructions.select_app.title'),
-    text: t('instructions.select_app.text'),
+    title: t('instructions.download_app.title'),
+    text: t('instructions.download_app.text'),
   },
   {
     title: t('instructions.register_app.title'),
     text: t('instructions.register_app.text'),
   },
   {
-    title: t('instructions.open_app.title'),
-    text: t('instructions.open_app.text'),
+    title: t('instructions.select_app.title'),
+    text: t('instructions.select_app.text'),
+  },
+  {
+    title: t('instructions.payment.title'),
+    text: t('instructions.payment.text'),
   },
   {
     title: t('instructions.delivered_voucher.title'),
