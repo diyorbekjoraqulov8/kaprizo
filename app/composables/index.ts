@@ -35,3 +35,16 @@ export const validatePhone = (phone: string) => {
     }
     return lastValue
 };
+
+export function formatterVoucherCode(e) {
+    const numbers = e.target.value?.replace(/[^0-9]/g, '') // Only number
+
+    let value = e.target.value.toUpperCase()
+    value = value.replace(/[^A-Z0-9]/g, '')
+
+    let digits = numbers.slice(0, 9).replace(/(\d{4})(\d{5})/, '$1-$2')
+    let letters = value.slice(9, 10).replace(/[^A-Z]/g, '')
+    e.target.value = digits + letters
+
+    return e.target.value
+}

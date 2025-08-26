@@ -1,57 +1,60 @@
 <script setup lang="ts">
-import { useDebounceFn } from '@vueuse/core'
+import {useDebounceFn} from '@vueuse/core'
+import {useI18n} from "vue-i18n";
 
 const searchValue = ref(null)
 const errorMessage = ref()
-const verifyVoucher = ref({
-  "status": "usable",
-  "message": "Voucher is valid and ready for redemption",
-  "details": {
-    "voucher_amount": 100000,
-    "minimum_purchase": 100000,
-    "expires_on": "2025-09-19",
-    "days_until_expiration": 26
-  }
-})
+const verifyVoucher = ref()
 const loading = ref(false)
 
-const searchVoucherVerify = useDebounceFn(async (value: string | null) => {
-  loading.value = true
-  const { data, error } = await useFetch('/api/vouchers-verify', {
-    method: "POST",
-    body: { redeem_code: value }
-  })
+const { locale } = useI18n()
 
-  if (error.value) {
-    if (searchValue?.length) errorMessage.value = "Xatolik yuz berdi"
-    else verifyVoucher.value = null
-  } else {
-    console.log('2: ', data.value)
-    verifyVoucher.value = data.value
+const searchVoucherVerify = useDebounceFn(async (value: string | null) => {
+  try {
+    loading.value = true
+    verifyVoucher.value = await $fetch('https://voucher.khamraev.uz/api/vouchers/verify/', {
+      method: "POST",
+      body: {redeem_code: value},
+      // body: { redeem_code: "0066-00038R" },
+      headers: {
+        'Accept-Language': locale.value
+      }
+    })
     errorMessage.value = undefined
     if (verifyVoucher.value?.status === 'invalid') errorMessage.value = verifyVoucher.value?.message
+  } catch (e) {
+    if (searchValue?.length) errorMessage.value = "Xatolik yuz berdi"
+    else verifyVoucher.value = null
+  } finally {
+    loading.value = false
   }
-
-  loading.value = false
 }, 400)
+
+const formatVoucherCode = (e) => {
+  const formatterValue = formatterVoucherCode(e)
+  searchValue.value = formatterValue
+
+  if (formatterValue) {
+    searchVoucherVerify(formatterValue)
+  }
+}
 
 const clearSearch = () => {
   searchValue.value = null
   searchVoucherVerify(null)
 }
 </script>
-<!--#ebd8c5-->
+
 <template>
   <div class="container pt-7 pb-5">
     <div class="flex flex-col items-center gap-3 mb-10">
       <h1 class="text-3xl font-serif text-[#a8915b]">Vaucher xolati</h1>
-
       <div class="relative border-2 border-[#a8915b] rounded-full text-[#a8915b] overflow-hidden flex items-center">
         <input
             v-model="searchValue"
             class="search-input outline-none px-5 py-2"
             placeholder="Qidiring..."
-            @input="({target}) => searchVoucherVerify(target?.value)"
+            @input="formatVoucherCode"
         />
         <button
             v-if="searchValue?.length"
@@ -77,7 +80,7 @@ const clearSearch = () => {
           <p class="text-xl text-red-500">{{ errorMessage }}</p>
         </div>
 
-        <LazyVaucherStatusInfo v-else-if="verifyVoucher"/>
+        <LazyVaucherStatusInfo v-else-if="verifyVoucher" :voucher="verifyVoucher?.details"/>
       </template>
     </div>
   </div>
