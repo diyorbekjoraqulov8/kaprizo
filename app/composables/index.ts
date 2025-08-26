@@ -10,7 +10,6 @@ export const scrollToSmooth = (name: string): void => {
 }
 
 export const formatPhone = ({ target }: { target: { value: string } }): string => {
-    console.log(target)
     return target.value += '1-1'
 }
 
@@ -18,8 +17,6 @@ export const validatePhone = (phone: string) => {
     let v = phone.replace(/[^0-9]/g, "");
     if (!v?.startsWith('+998')) v = '+998'
     const l = v.length;
-    console.log('phone: ', phone)
-    console.log('l: ', l)
     let lastValue;
     if (l < 3) {
         lastValue = v.replace(/^([0-9]{2})/, "$1");

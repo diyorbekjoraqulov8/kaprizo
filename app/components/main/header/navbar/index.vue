@@ -1,18 +1,32 @@
 <script setup lang="ts">
 import {scrollToSmooth} from "~/composables";
+import {useRoute, useRouter} from "vue-router";
 
 interface IProps {
   isMobile: boolean;
 }
 
-type TPageIds = 'income' | 'about' | 'advantages' | 'faq'
+type TPageIds = 'income' | 'about' | 'advantages' | 'faq' | 'instructions'
 
 const props = defineProps<IProps>()
 
 const emits = defineEmits(['select'])
 
+const route = useRoute()
+const router = useRouter()
+const localePath = useLocalePath();
+
 function clickPage(name: TPageIds) {
-  scrollToSmooth(name)
+  if (!String(route.name)?.startsWith('index')) {
+    router.push(localePath('/'))
+        .then(() => {
+          nextTick(() => {
+            scrollToSmooth(name)
+          })
+        })
+  } else {
+    scrollToSmooth(name)
+  }
 
   props.isMobile && emits('select', name)
 }
