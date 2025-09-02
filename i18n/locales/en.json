@@ -1,10 +1,31 @@
 {
+  "menu": {
+    "main": "Home",
+    "about_app": "About",
+    "advantages": "Advantages",
+    "rules": "Rules",
+    "faq": "FAQ"
+  },
+  "search": "Search",
+  "data_not_found": "No information",
+  "error": "An error occurred",
+  "voucher_info": {
+    "valid": "Can be used",
+    "user": "User",
+    "phone": "Telefon",
+    "voucher_status": "Voucher status",
+    "number": "Voucher number",
+    "purchase_date": "Date of purchase",
+    "expires_on": "Validity period",
+    "rules": "Terms",
+    "operator_call": "Contact the operator"
+  },
   "lang": {
     "uz": "Uz",
     "ru": "Ru",
     "en": "Eng"
   },
-  "check_voucher": "Vaucherni tekshirish",
+  "check_voucher": "Voucher verification",
   "income": {
     "gift": "It's now easy",
     "gift_two": "to make your loved ones happy",
@@ -16,8 +37,8 @@
     "text": "A mobile marketplace with gift vouchers. You choose a gift remotely, and we deliver it."
   },
   "advantages": {
-    "subtitle": "Nima uchun “Kaprizo”?",
-    "title": "“Kaprizo”ning afzalliklari",
+    "subtitle": "Why “Kaprizo”?",
+    "title": "Advantages of “Kaprizo”",
     "wide_selection": {
       "title": "Wide Selection",
       "text": "Popular stores and service centers in one app"
@@ -77,10 +98,10 @@
     }
   },
   "instructions": {
-    "title": "Ishlatish tartibi",
+    "title": "Operating procedure",
     "download_app": {
-      "title": "Ilovani App Store va Google Playdan yuklang",
-      "text": "IOS va Android qurilmalari uchun mavjud"
+      "title": "Download the app from the App Store and Google Play",
+      "text": "Available for iOS and Android devices"
     },
     "payment": {
       "title": "Make the payment",
@@ -101,5 +122,10 @@
   },
   "footer": {
     "description": "We will find answers to all your \"kapriz\""
-  }
+  },
+  "contact": {
+    "collaboration": "Collaboration with “Kaprizo”",
+    "enter_phone": "Leave your number and we will contact you."
+  },
+  "send": "Send"
 }

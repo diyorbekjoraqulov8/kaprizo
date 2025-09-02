@@ -7,7 +7,7 @@ const errorMessage = ref()
 const verifyVoucher = ref()
 const loading = ref(false)
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const searchVoucherVerify = useDebounceFn(async (value: string | null) => {
   try {
@@ -23,7 +23,7 @@ const searchVoucherVerify = useDebounceFn(async (value: string | null) => {
     errorMessage.value = undefined
     if (verifyVoucher.value?.status === 'invalid') errorMessage.value = verifyVoucher.value?.message
   } catch (e) {
-    if (searchValue?.length) errorMessage.value = "Xatolik yuz berdi"
+    if (searchValue?.length) errorMessage.value = t('error')
     else verifyVoucher.value = null
   } finally {
     loading.value = false
@@ -48,12 +48,12 @@ const clearSearch = () => {
 <template>
   <div class="container pt-7 pb-5">
     <div class="flex flex-col items-center gap-3 mb-10">
-      <h1 class="text-3xl font-serif text-[#a8915b]">Vaucher xolati</h1>
+      <h1 class="text-3xl font-serif text-[#a8915b]">{{ t('voucher_info.voucher_status') }}</h1>
       <div class="relative border-2 border-[#a8915b] rounded-full text-[#a8915b] overflow-hidden flex items-center">
         <input
             v-model="searchValue"
             class="search-input outline-none px-5 py-2"
-            placeholder="Qidiring..."
+            :placeholder="`${t('search')}...`"
             @input="formatVoucherCode"
         />
         <button
@@ -74,7 +74,7 @@ const clearSearch = () => {
       <IconLoader v-if="loading" />
       <template v-else>
         <div v-if="!verifyVoucher" class="text-center flex justify-center gap-4">
-          <p class="text-xl">Malumot yo'q!</p>
+          <p class="text-xl">{{ t('data_not_found') }}</p>
         </div>
         <div v-else-if="errorMessage" class="text-center">
           <p class="text-xl text-red-500">{{ errorMessage }}</p>

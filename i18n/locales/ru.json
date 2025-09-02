@@ -1,10 +1,31 @@
 {
+  "menu": {
+    "main": "Главное",
+    "about_app": "О приложении",
+    "advantages": "Преимущества",
+    "rules": "Процедура",
+    "faq": "FAQ"
+  },
+  "search": "Поиск",
+  "data_not_found": "Нет информации!",
+  "error": "Произошла ошибка",
+  "voucher_info": {
+    "valid": "Можно использовать",
+    "user": "Пользователь",
+    "phone": "Телефон",
+    "voucher_status": "Статус ваучера",
+    "number": "Номер ваучера",
+    "purchase_date": "Дата покупки",
+    "expires_on": "Срок действия",
+    "rules": "Условия",
+    "operator_call": "Свяжитесь с оператором"
+  },
   "lang": {
     "uz": "Uz",
     "ru": "Ru",
     "en": "Eng"
   },
-  "check_voucher": "Vaucherni tekshirish",
+  "check_voucher": "Проверка ваучера",
   "income": {
     "gift": "Дарить",
     "gift_two": "стало проще отправляйте",
@@ -16,8 +37,8 @@
     "text": "Мобильная торговая площадка с подарочными сертификатами. Вы выбираете подарок удалённо, а мы его доставляем."
   },
   "advantages": {
-    "subtitle": "Nima uchun “Kaprizo”?",
-    "title": "“Kaprizo”ning afzalliklari",
+    "subtitle": "Почему “Капризо”?",
+    "title": "Преимущества “Капризо”",
     "wide_selection": {
       "title": "Широкий выбор",
       "text": "Популярные магазины и сервисные центры в одном приложении"
@@ -44,8 +65,8 @@
     }
   },
   "faq": {
-    "subtitle": "Ko’p beriladigan savollar",
-    "title": "TEZ TEZ so'raladigan savollar va javoblari",
+    "subtitle": "Часто задаваемые вопросы",
+    "title": "Часто задаваемые вопросы и ответы",
     "question_list": {
       "one": {
         "question": "Как купить ваучер?",
@@ -101,5 +122,10 @@
   },
   "footer": {
     "description": "Мы найдем ответ на все ваши \"капризы\""
-  }
+  },
+  "contact": {
+    "collaboration": "Сотрудничество с “Kaprizo”",
+    "enter_phone": "Оставьте свой номер и мы свяжемся с вами."
+  },
+  "send": "Отправлять"
 }

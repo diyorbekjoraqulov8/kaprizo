@@ -1,4 +1,25 @@
 {
+  "menu": {
+    "main": "Asosiy",
+    "about_app": "Ilova haqida",
+    "advantages": "Afzalliklar",
+    "rules": "Tartib",
+    "faq": "Savol-javoblar"
+  },
+  "search": "Qidirish",
+  "data_not_found": "Malumot yo'q!",
+  "error": "Xatolik yuz berdi",
+  "voucher_info": {
+    "valid": "Foydalanish mumkin",
+    "user": "Foydalanuvchi",
+    "phone": "Telefon",
+    "voucher_status": "Vaucher xolati",
+    "number": "Vaucher raqami",
+    "purchase_date": "Sotib olingan sana",
+    "expires_on": "Amal qilish muddati",
+    "rules": "Shartlar",
+    "operator_call": "Operator bilan aloqa"
+  },
   "lang": {
     "uz": "Uz",
     "ru": "Ru",
@@ -101,5 +122,10 @@
   },
   "footer": {
     "description": "Barcha “kapriz”laringizga javob topamiz"
-  }
+  },
+  "contact": {
+    "collaboration": "“Kaprizo” bilan hamkorlik",
+    "enter_phone": "Raqamingizni qoldiring, siz bilan bog’lanamiz"
+  },
+  "send": "Yuborish"
 }

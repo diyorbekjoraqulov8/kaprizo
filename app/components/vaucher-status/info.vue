@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import {useI18n} from "vue-i18n";
+
+interface IMerchant {
+  store: {
+    brand_name: string;
+  }
+  contact_phone: string;
+}
 interface IVoucher {
   days_until_expiration: number
   expires_on: string
@@ -11,6 +19,7 @@ interface IVoucher {
   user_fullname: string
   voucher_amount: number
   voucher_number: string
+  merchant: IMerchant
 }
 
 interface IProps {
@@ -18,10 +27,16 @@ interface IProps {
 }
 
 const props = defineProps<IProps>()
+
+const {t} = useI18n()
 </script>
 
 <template>
   <div class="w-full">
+    <div class="flex justify-center mb-4 gap-2 items-center">
+      <div class="w-9 h-9 border border-gold-text rounded-full text-4xl text-green-600 flex justify-center items-center">✓</div>
+      {{ t('voucher_info.valid') }}
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 mb-6">
       <div>
         <div class="flex flex-col gap-3">
@@ -30,7 +45,7 @@ const props = defineProps<IProps>()
               <LazyIconScan class="info-item__prepend__icon"/>
             </div>
             <div class="info-item__append">
-              <p class="info-item__append__label">Vaucher raqami</p>
+              <p class="info-item__append__label">{{ t('voucher_info.number') }}</p>
               <p class="info-item__append__value">{{ props.voucher?.voucher_number }}</p>
             </div>
           </div>
@@ -39,7 +54,7 @@ const props = defineProps<IProps>()
               <LazyIconPerson class="info-item__prepend__icon"/>
             </div>
             <div class="info-item__append">
-              <p class="info-item__append__label">Foydalanuvchi</p>
+              <p class="info-item__append__label">{{ t('voucher_info.user') }}</p>
               <p class="info-item__append__value">{{ props.voucher?.user_fullname }}</p>
             </div>
           </div>
@@ -48,7 +63,7 @@ const props = defineProps<IProps>()
               <LazyIconPhone class="info-item__prepend__icon"/>
             </div>
             <div class="info-item__append">
-              <p class="info-item__append__label">Telefon</p>
+              <p class="info-item__append__label">{{ t('voucher_info.phone') }}</p>
               <p class="info-item__append__value">{{ props.voucher?.phone }}</p>
             </div>
           </div>
@@ -57,7 +72,7 @@ const props = defineProps<IProps>()
               <LazyIconCalendar class="info-item__prepend__icon"/>
             </div>
             <div class="info-item__append">
-              <p class="info-item__append__label">Sotib olingan sana</p>
+              <p class="info-item__append__label">{{ t('voucher_info.purchase_date') }}</p>
               <p class="info-item__append__value">{{ new Date(props.voucher?.purchase_date).toISOString().split('T')[0] }}</p>
             </div>
           </div>
@@ -66,7 +81,7 @@ const props = defineProps<IProps>()
               <LazyIconClock class="info-item__prepend__icon"/>
             </div>
             <div class="info-item__append">
-              <p class="info-item__append__label">Amal qilish muddati</p>
+              <p class="info-item__append__label">{{ t('voucher_info.expires_on') }}</p>
               <p class="info-item__append__value">{{ props.voucher?.expires_on }}</p>
             </div>
           </div>
@@ -75,17 +90,19 @@ const props = defineProps<IProps>()
               <LazyIconList class="info-item__prepend__icon"/>
             </div>
             <div class="info-item__append">
-              <p class="info-item__append__label">Shartlar</p>
+              <p class="info-item__append__label">{{ t('voucher_info.rules') }}</p>
               <p class="info-item__append__value">{{ props.voucher?.rules }}</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="flex flex-col  items-center justify-start gap-8">
         <NuxtImg
           :src="props.voucher?.image || 'advantage.png'"
           class="border border-gold-text w-[300px] h-[300px] flex justify-center items-center rounded-full overflow-hidden object-cover object-center"
         />
+
+        <p class="text-xl font-semibold">{{ props.voucher?.merchant?.store?.brand_name }}</p>
       </div>
     </div>
 
@@ -94,8 +111,8 @@ const props = defineProps<IProps>()
         <LazyIconPhone class="info-item__prepend__icon"/>
       </div>
       <div class="info-item__append">
-        <p class="info-item__append__label">Operator bilan aloqa</p>
-        <a :href="`tel:${props.voucher?.phone}`" class="info-item__append__value">{{ props.voucher?.phone }}</a>
+        <p class="info-item__append__label">{{ t('voucher_info.operator_call') }}</p>
+        <a :href="`tel:${props.voucher?.phone}`" class="info-item__append__value">{{ props.voucher?.merchant?.contact_phone }}</a>
       </div>
     </div>
   </div>
