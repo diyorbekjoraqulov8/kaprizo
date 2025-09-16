@@ -33,7 +33,7 @@
     "text_two": "gift vouchers"
   },
   "about": {
-    "title": "“Kaprizo is...",
+    "title": "“Kaprizo” - is...",
     "text": "A mobile marketplace with gift vouchers. You choose a gift remotely, and we deliver it."
   },
   "advantages": {
@@ -127,5 +127,8 @@
     "collaboration": "Collaboration with “Kaprizo”",
     "enter_phone": "Leave your number and we will contact you."
   },
-  "send": "Send"
+  "send": "Send",
+  "partners": {
+    "title": "Our partners"
+  }
 }

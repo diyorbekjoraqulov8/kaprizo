@@ -33,7 +33,7 @@
     "text_two": "sovg‘a vaucherlarni yuboring"
   },
   "about": {
-    "title": "Kaprizo bu...",
+    "title": "“Kaprizo” - bu...",
     "text": "Sovg‘a vaucherlari jamlangan mobil marketpleys. Siz masofadan sovg‘ani tanlang, biz esa uni yetkazib beramiz."
   },
   "advantages": {
@@ -116,7 +116,7 @@
       "text": "O‘zingiz yoki yaqinlaringiz uchun eng mos vaucherlarni do‘konlar ro‘yxatidan tanlang"
     },
     "delivered_voucher": {
-      "title": "Vaucher yetkaziladi",
+      "title": "Vaucherni qabul qiling",
       "text": "Tanlangan vaucher ko‘rsatilgan manzilga zudlik bilan yetkaziladi"
     }
   },
@@ -127,5 +127,8 @@
     "collaboration": "“Kaprizo” bilan hamkorlik",
     "enter_phone": "Raqamingizni qoldiring, siz bilan bog’lanamiz"
   },
-  "send": "Yuborish"
+  "send": "Yuborish",
+  "partners": {
+    "title": "Hamkorlarimiz"
+  }
 }

@@ -14,7 +14,7 @@ const {t} = useI18n();
 
         <div class="text-muted text-3xl flex gap-4">
           <router-link to="/">
-            <LazyIconTelegram />
+            <LazyIconTelegram/>
           </router-link>
           <router-link to="/">
             <LazyIconInstagram/>
@@ -38,7 +38,7 @@ const {t} = useI18n();
         </li>
         <li class="flex gap-2">
           <LazyIconPhone class="text-xl text-gray-400"/>
-          <a href="tel:+998988091744">+998 98 809 17 44</a>
+          <a href="tel:+998999934908">+998 99 993 49 08</a>
         </li>
         <li class="flex gap-2">
           <LazyIconMarker class="flex-shrink-0 text-xl text-gray-400"/>

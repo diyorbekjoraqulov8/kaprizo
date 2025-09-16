@@ -2,15 +2,17 @@
 </script>
 
 <template>
-  <MainHeaderIncome />
+  <MainHeaderIncome/>
 
-  <MainAbout />
+  <MainAbout/>
 
-  <MainAdvantages />
+  <MainAdvantages/>
 
-  <MainInstructions />
+  <MainInstructions/>
 
-  <MainFaq />
+  <MainFaq/>
 
-  <MainPartner />
+  <MainPartner/>
+
+  <MainPartners/>
 </template>

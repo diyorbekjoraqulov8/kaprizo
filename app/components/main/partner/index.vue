@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import {useI18n} from "vue-i18n";
-import {formatPhone, validatePhone} from "~/composables";
+import {formatPhone, formatPhoneNumber, validatePhone} from "~/composables";
 
-const phoneNumber = ref()
+const phoneNumber = ref<string>('')
 
 const { t } = useI18n()
+
+function handleChangePhone(): void {
+  phoneNumber.value = formatPhoneNumber(phoneNumber.value)
+}
 </script>
 
 <template>
@@ -19,10 +23,10 @@ const { t } = useI18n()
             class="outline-none border focus:border-primary px-5 py-4 rounded-full"
             placeholder="+998(_)"
             v-model="phoneNumber"
-            @input="() => phoneNumber = validatePhone(phoneNumber)"
+            @input="handleChangePhone"
         />
 
-        <SharedButton size="extra-large" type="primary">{{ t('contact.send') }}</SharedButton>
+        <SharedButton size="extra-large" type="primary">{{ t('send') }}</SharedButton>
       </div>
     </div>
   </section>
