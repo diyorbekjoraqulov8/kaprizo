@@ -1,29 +1,53 @@
 <script setup lang="ts">
 import {useI18n} from "vue-i18n";
 
-interface IMerchant {
-  store: {
-    brand_name: string;
-  }
-  contact_phone: string;
+export type VoucherStatus = "usable" | "expired" | "already_used" | "invalid";
+
+export interface Location {
+  id: number;
+  address: string;
+  phone: string;
+  working_hours: string;
+  is_active: boolean;
 }
-interface IVoucher {
-  days_until_expiration: number
-  expires_on: string
-  general_info: string
-  image: string
-  minimum_purchase: number
-  phone: string
-  purchase_date: number
-  rules: string
-  user_fullname: string
-  voucher_amount: number
-  voucher_number: string
-  merchant: IMerchant
+
+export interface Store {
+  id: number;
+  brand_name: string;
+  description: string;
+  website: string;
+  is_active: boolean;
+  logo_url: string;
+  locations: Location[];
+}
+
+export interface Merchant {
+  id: number;
+  name: string;
+  description: string;
+  contact_phone: string;
+  slug: string;
+  is_active: boolean;
+  store: Store;
+}
+
+export interface VoucherDetails {
+  voucher_number: string;
+  user_fullname: string;
+  phone: string;
+  purchase_date: number; // UNIX timestamp (seconds)
+  general_info: string;
+  rules: string;
+  image: string; // URL
+  voucher_amount: number;
+  minimum_purchase: number;
+  expires_on: string; // ISO date string
+  days_until_expiration: number;
+  merchant: Merchant;
 }
 
 interface IProps {
-  voucher: IVoucher
+  voucher: VoucherDetails
 }
 
 const props = defineProps<IProps>()
@@ -92,6 +116,19 @@ const {t} = useI18n()
             <div class="info-item__append">
               <p class="info-item__append__label">{{ t('voucher_info.rules') }}</p>
               <p class="info-item__append__value">{{ props.voucher?.rules }}</p>
+            </div>
+          </div>
+          <div v-for="item in props.voucher.merchant.store.locations" class="info-item !items-start">
+            <div class="info-item__prepend">
+              <LazyIconLocation class="info-item__prepend__icon"/>
+            </div>
+            <div class="info-item__append">
+              <p class="info-item__append__label">{{ t('voucher_info.address') }}</p>
+              <p class="info-item__append__value">{{ item.address }}</p>
+              <p class="info-item__append__value">
+                <span class="info-item__append__label">{{t('voucher_info.working_hours')}}: </span>
+                {{ item.working_hours }}
+              </p>
             </div>
           </div>
         </div>

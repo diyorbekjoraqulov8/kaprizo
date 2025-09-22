@@ -18,7 +18,9 @@
     "purchase_date": "Дата покупки",
     "expires_on": "Срок действия",
     "rules": "Условия",
-    "operator_call": "Свяжитесь с оператором"
+    "operator_call": "Свяжитесь с оператором",
+    "address": "Адрес",
+    "working_hours": "Рабочее время"
   },
   "lang": {
     "uz": "Uz",
