@@ -31,11 +31,11 @@ const list = computed(() => [
 <template>
   <div class="instructions-step w-full flex flex-col gap-6">
     <MainInstructionsStepsItem
-      v-for="(item, index) in list"
-      :ke="index"
-      :index="(index + 1)"
-      :title="item.title"
-      :text="item.text"
+        v-for="(item, index) in list"
+        :ke="index"
+        :index="(index + 1)"
+        :title="item.title"
+        :text="item.text"
     />
   </div>
 </template>

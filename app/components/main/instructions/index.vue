@@ -5,17 +5,17 @@ const {t} = useI18n()
 </script>
 
 <template>
-  <section id="instructions" class="instructions py-16 lg:py-32 bg-light">
+  <section id="instructions" class="instructions py-16 lg:py-32 bg-light max-w-full">
     <h1 class="text-4xl text-center text-dark font-bold mb-8 lg:mb-12">{{ t('instructions.title') }}</h1>
 
     <div class="container flex max-lg:flex-col-reverse gap-4 justify-between">
       <div class="flex flex-col lg:flex-row items-center gap-6">
-        <MainInstructionsSteps />
+        <MainInstructionsSteps/>
       </div>
       <LazyNuxtImg
           src="instructions.png"
           alt="Instructions to use app"
-          class="instructions-img max-lg:h-[70dvh] lg:w-[44%] max-lg:mx-auto"
+          class="instructions-img !w-6/12 max-w-full max-lg:h-[70dvh] lg:w-[44%] max-lg:mx-auto"
       />
     </div>
   </section>
