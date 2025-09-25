@@ -40,7 +40,6 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      {code: 'en', language: 'en-US', name: 'English', file: 'en.json'},
       {code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru.json'},
       {code: 'uz', language: 'uz-UZ', name: 'Uzbek', file: 'uz.json'},
     ],

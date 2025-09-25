@@ -18,7 +18,9 @@
     "purchase_date": "Sotib olingan sana",
     "expires_on": "Amal qilish muddati",
     "rules": "Shartlar",
-    "operator_call": "Operator bilan aloqa"
+    "operator_call": "Operator bilan aloqa",
+    "address": "Manzil",
+    "working_hours": "Ish vaqti"
   },
   "lang": {
     "uz": "Uz",
