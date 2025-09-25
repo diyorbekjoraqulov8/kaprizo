@@ -15,7 +15,7 @@ const {t} = useI18n()
       <LazyNuxtImg
           src="instructions.png"
           alt="Instructions to use app"
-          class="instructions-img !w-6/12 max-w-full max-lg:h-[70dvh] lg:w-[44%] max-lg:mx-auto"
+          class="instructions-img !w-5/12 max-w-full  max-lg:mx-auto"
       />
     </div>
   </section>
